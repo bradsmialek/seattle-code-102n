@@ -1,0 +1,121 @@
+h1 {
+    font-family: Arial;
+    text-align: center;
+    border-style: dashed;
+    border-width: 10px;
+}
+
+
+
+body{
+    width: 100vw;
+    height: 100vw;
+    background:url("background.png");
+    display:flex;
+}
+
+#blog_par{
+    color:rgb(230, 49, 18);
+}
+
+.sec_tit{
+    color:#0BD49E;
+    text-align:center;
+}
+
+ul{
+    background-color: #333333;
+    list-style-type: none;
+    overflow: hidden;
+    text-align:center;
+    margin: 0;
+    padding: 15px;
+}
+
+li a {
+    color:white;
+    text-decoration: none;
+    
+    padding: 16px;
+
+}
+li{
+      display: inline-block;
+}
+
+footer{
+    padding: 1px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#333333;
+    color: white;
+    text-align: center;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: 140px 140px 54px;
+    grid-template-areas: "image" "text" "stats";
+    font-family: 'Roboto', sans-serif;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba (0,0,0,0.9);
+    /*border-color: orange;
+    border-style: dashed;*/
+    overflow: hidden;
+}
+
+.card-image {
+    grid-area :image;
+    background: url("gcheese.jpg");
+    border-top-left-radius:15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+
+.card-text{
+    grid-area: text;
+    
+}
+
+.card-text p{
+    text-align:justify;
+    font-size: medium;
+    
+}
+
+.card-stats{
+    grid-area: stats;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background: rgb(255, 7, 110);
+    border-color:white;
+}
+
+
+.card-stats .stat{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    color: white;
+}
+
+.card-stats .type{
+    font-size: 8px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.card-stats .value {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
